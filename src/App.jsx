@@ -12,7 +12,7 @@ import './App.css';
 
 export default function App() {
   const [theme, setTheme] = useState(() => {
-    return localStorage.getItem('portfolio-theme') || 'dark';
+    return localStorage.getItem('portfolio-theme') || 'light';
   });
 
   useEffect(() => {

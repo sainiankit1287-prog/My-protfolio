@@ -105,7 +105,7 @@ export default function Projects() {
               id={`project-${project.id}`}
             >
               {/* Header */}
-              <div className="project-card__header" style={{ background: project.gradient }}>
+              <div className="project-card__header">
                 <div className="project-card__header-content">
                   <span className="project-card__icon">{project.icon}</span>
                   <span className={`project-card__status project-card__status--${project.status.toLowerCase()}`}>

@@ -106,7 +106,7 @@ export default function Achievements() {
         <div className="achievements__grid">
           {achievements.map((a) => (
             <div className="achievement-card" key={a.id} id={`achievement-${a.id}`}>
-              <div className="achievement-card__top" style={{ background: a.gradient }}>
+              <div className="achievement-card__top">
                 <div className="achievement-card__icon-large">{a.icon}</div>
                 <div className="achievement-card__metric">
                   <span className="achievement-card__metric-num">{a.metric}</span>

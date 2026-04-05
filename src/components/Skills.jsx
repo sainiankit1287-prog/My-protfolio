@@ -113,7 +113,7 @@ export default function Skills() {
               <div className="skills__progress-bar">
                 <div
                   className="skills__progress-fill"
-                  style={{ width: `${skill.level}%`, background: `linear-gradient(90deg, var(--accent-primary), ${skill.color})` }}
+                  style={{ width: `${skill.level}%` }}
                 ></div>
               </div>
             </div>
