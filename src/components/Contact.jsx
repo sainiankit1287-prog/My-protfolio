@@ -24,7 +24,7 @@ const contactLinks = [
     ),
     label: 'LinkedIn',
     value: 'linkedin.com/in/ankit-kumar-saini',
-    href: 'https://linkedin.com/in/ankit-kumar-saini',
+    href: '#',
     color: '#0077b5',
     desc: 'Connect with me professionally',
   }
