@@ -13,6 +13,13 @@
   padding-bottom: 32px;
 }
 
+@media (max-width: 768px) {
+  .footer .container {
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+}
+
 /* ── Inner grid ── */
 .footer__inner {
   display: grid;
@@ -20,6 +27,20 @@
   gap: 48px;
   margin-bottom: 40px;
   align-items: start;
+}
+
+@media (max-width: 1024px) {
+  .footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__inner {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
 }
 
 /* ── Brand ── */

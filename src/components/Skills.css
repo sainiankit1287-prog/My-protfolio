@@ -17,6 +17,14 @@
   width: fit-content;
 }
 
+@media (max-width: 480px) {
+  .skills__tabs {
+    width: 100%;
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+}
+
 .skills__tab {
   background: transparent;
   border: none;
@@ -50,6 +58,12 @@
   gap: 20px;
   margin-bottom: 52px;
   animation: scaleIn 0.35s ease both;
+}
+
+@media (max-width: 768px) {
+  .skills__progress-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .skills__progress-item {

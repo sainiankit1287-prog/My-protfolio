@@ -32,6 +32,29 @@
   padding: 60px 0;
 }
 
+@media (max-width: 1024px) {
+  .hero__content {
+    grid-template-columns: 1fr 300px;
+    gap: 48px;
+    padding: 40px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__content {
+    gap: 24px;
+    padding: 24px 0;
+  }
+}
+
 /* ── Text side ── */
 .hero__text {
   animation: fadeInUp 0.7s ease forwards;
@@ -50,6 +73,13 @@
   font-weight: 600;
   margin-bottom: 24px;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 480px) {
+  .hero__badge {
+    font-size: 0.75rem;
+    padding: 5px 12px;
+  }
 }
 
 .hero__badge-dot {
@@ -71,6 +101,12 @@
   margin-bottom: 18px;
 }
 
+@media (max-width: 480px) {
+  .hero__name {
+    font-size: 1.8rem;
+  }
+}
+
 .hero__name .highlight { color: var(--accent); }
 
 /* ── Role ── */
@@ -83,6 +119,19 @@
   display: flex;
   align-items: center;
   gap: 6px;
+}
+
+@media (max-width: 768px) {
+  .hero__role {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__role {
+    font-size: 0.95rem;
+    margin-bottom: 18px;
+  }
 }
 
 .hero__role-prefix { color: var(--text-muted); }

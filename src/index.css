@@ -87,6 +87,18 @@ html {
   font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-primary);
@@ -281,20 +293,101 @@ section {
 .animate-pulse-glow { animation: none; }
 
 /* ===================== RESPONSIVE ===================== */
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 24px;
+  }
+}
+
 @media (max-width: 1024px) {
   .grid-3 { grid-template-columns: repeat(2, 1fr); }
   .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  section { padding: 80px 0; }
+  .container { padding: 0 20px; }
 }
 
 @media (max-width: 768px) {
-  section { padding: 68px 0; }
+  :root {
+    --navbar-height: 56px;
+  }
+  
+  section { padding: 60px 0; }
   .container { padding: 0 20px; }
   .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
-  .section-title { font-size: 1.75rem; }
-  .btn { padding: 11px 22px; font-size: 0.875rem; }
+  .section-title { font-size: 1.75rem; margin-bottom: 12px; }
+  .section-subtitle { font-size: 0.95rem; }
+  .divider { margin: 10px 0 24px; }
+  
+  .btn { 
+    padding: 11px 22px; 
+    font-size: 0.875rem;
+    width: fit-content;
+  }
+  
+  .btn-sm { 
+    padding: 9px 16px; 
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 640px) {
+  section { 
+    padding: 48px 0; 
+  }
+  
+  .section-header {
+    margin-bottom: 40px;
+  }
+  
+  .section-title { 
+    font-size: 1.5rem; 
+  }
+  
+  .card { 
+    padding: 20px;
+  }
 }
 
 @media (max-width: 480px) {
-  section { padding: 52px 0; }
+  :root {
+    --navbar-height: 56px;
+  }
+
+  section { padding: 40px 0; }
   .container { padding: 0 16px; }
+  
+  .section-header {
+    margin-bottom: 32px;
+  }
+  
+  .section-title { 
+    font-size: 1.35rem;
+    margin-bottom: 10px;
+  }
+  
+  .section-subtitle { 
+    font-size: 0.9rem;
+  }
+  
+  .btn { 
+    padding: 10px 20px; 
+    font-size: 0.8rem;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .btn-sm { 
+    padding: 8px 14px; 
+    font-size: 0.75rem;
+  }
+  
+  .card { 
+    padding: 16px;
+    border-radius: var(--radius-md);
+  }
+  
+  .divider { 
+    margin: 8px 0 20px;
+    width: 32px;
+  }
 }

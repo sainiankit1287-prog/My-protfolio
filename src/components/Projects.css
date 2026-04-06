@@ -12,6 +12,19 @@
   align-items: start;
 }
 
+@media (max-width: 1280px) {
+  .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .projects__grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
 /* ── Project Card ── */
 .project-card {
   background: var(--bg-card);
@@ -37,6 +50,12 @@
   align-items: flex-start;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
+}
+
+@media (max-width: 480px) {
+  .project-card__header {
+    padding: 16px;
+  }
 }
 
 .project-card__header-content {
